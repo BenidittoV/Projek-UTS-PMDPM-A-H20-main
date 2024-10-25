@@ -135,7 +135,7 @@ if selected == 'Regresi':
     ]]
 
 
-    if st.button("Prediksi Price"):
+    if st.button("Cek Harga"):
         svr_model_prediction = svr_model.predict(input_data)
         st.markdown(f"Prediksi Harga properti : $ {svr_model_prediction[0]:.2f}")
 
