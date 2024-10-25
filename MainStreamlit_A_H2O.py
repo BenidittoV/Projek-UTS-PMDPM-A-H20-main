@@ -7,19 +7,19 @@ from streamlit_option_menu import option_menu
 model_path = 'LR_properti_model.pkl'
 model_path2 = 'SVR_properti_model.pkl'
 
-model = os.path.join(model_path, 'rb')
-with open(model, 'rb') as f:
-    lr_model = pickle.load(f)
-
-model2 = os.path.join(model_path2, 'rb')
-with open(model2, 'rb') as f:
-    svr_model = pickle.load(f)
-
-# with open(lr_model_path, 'rb') as f:
+# model = os.path.join(model_path, 'rb')
+# with open(model, 'rb') as f:
 #     lr_model = pickle.load(f)
 
-# with open(svr_model_path, 'rb') as f:
+# model2 = os.path.join(model_path2, 'rb')
+# with open(model2, 'rb') as f:
 #     svr_model = pickle.load(f)
+
+with open(lr_model_path, 'rb') as f:
+    lr_model = pickle.load(f)
+
+with open(svr_model_path, 'rb') as f:
+    svr_model = pickle.load(f)
 
 with st.sidebar:
     selected = option_menu('Tutorial Desain Streamlit UTS ML 24/25',
