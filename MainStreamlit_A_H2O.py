@@ -15,10 +15,10 @@ model_path2 = 'SVR_properti_model.pkl'
 # with open(model2, 'rb') as f:
 #     svr_model = pickle.load(f)
 
-with open(lr_model_path, 'rb') as f:
+with open(model_path, 'rb') as f:
     lr_model = pickle.load(f)
 
-with open(svr_model_path, 'rb') as f:
+with open(model_path2, 'rb') as f:
     svr_model = pickle.load(f)
 
 with st.sidebar:
